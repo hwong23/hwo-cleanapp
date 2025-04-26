@@ -47,3 +47,35 @@ This development container is preconfigured with Java 17, Gradle, and the Google
 ## License
 
 This development container is licensed under the [MIT License](LICENSE).
+
+
+## Maven
+mvn exec:java -Dexec.mainClass='cleanapp.App'
+
+
+
+```
+mvn exec:java -Dexec.mainClass="com.example.Main" [-Dexec.args="argument1"] ...
+```
+
+
+The invocation can be as simple as mvn exec:java if the plugin configuration is in your pom.xml. The plugin site on Mojohaus has a more detailed example.
+
+```<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <mainClass>com.example.Main</mainClass>
+                    <arguments>
+                        <argument>argument1</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```

@@ -1,1 +1,7 @@
-MyGroup/App.class
+cleanapp/dominio/Activity$ActivityId.class
+cleanapp/dominio/Account$AccountId.class
+cleanapp/dominio/Money.class
+cleanapp/dominio/ActivityWindow.class
+cleanapp/dominio/Activity.class
+cleanapp/App.class
+cleanapp/dominio/Account.class
